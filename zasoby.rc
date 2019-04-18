@@ -1,0 +1,24 @@
+#include <windows.h>
+#include "dodatek.h"
+
+IKONA ICON "zasoby/ikona6.ico"
+
+MOJDIALOG DIALOG DISCARDABLE 140, -10, 105, 90
+STYLE DS_MODALFRAME | WS_POPUP
+CAPTION "O programie"
+FONT 8, "MS Sans Serif"
+{
+ LTEXT "----- Stoper v 1.0 Freeware -----" ,-1,5,5,180,10
+ LTEXT "-----------------------------------------------" ,-1,5,15,180,10
+ LTEXT "-- Marcin Modrak-Grabowski --",-1,5,25,180,10
+ LTEXT "- misiograbowski@gmail.com -",-1,5,35,180,10
+ LTEXT "------------------- 2017 ------------------",-1,5,45,180,10
+ //DEFPUSHBUTTON "&Fajnie!",IDOK,124,18,50,14
+ PUSHBUTTON "&OK",IDCANCEL,5,60,95,25
+}
+
+200 MENU //skrypt .rc do menu
+{
+    MENUITEM "&O programie", 100
+    MENUITEM "&Koniec", 101
+}
